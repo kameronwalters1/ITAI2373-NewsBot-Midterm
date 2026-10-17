@@ -75,7 +75,9 @@ def run_pipeline(project_dir: str | Path | None = None) -> dict:
     df = df.dropna(subset=["content", "category"]).drop_duplicates(subset=["content"]).copy()
     df["clean_content"] = df["content"].map(clean_text)
     df["word_count"] = df["clean_content"].str.split().str.len()
-    shutil.copy2(SOURCE, DATA / "BBC News Train.csv")
+    dataset_copy = DATA / "BBC News Train.csv"
+    if SOURCE.resolve() != dataset_copy.resolve():
+        shutil.copy2(SOURCE, dataset_copy)
 
     counts = df["category"].value_counts().sort_index()
     ax = counts.plot(kind="bar", color=PALETTE, figsize=(8, 4.6), rot=0)
@@ -233,3 +235,4 @@ class NewsBot:
 
 if __name__ == "__main__":
     print(json.dumps(run_pipeline(), indent=2))
+
