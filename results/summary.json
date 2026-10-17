@@ -1,0 +1,30 @@
+{
+  "source_rows": 1490,
+  "analysis_rows": 1440,
+  "missing_rows_removed": 0,
+  "duplicate_articles_removed": 50,
+  "categories": {
+    "business": 335,
+    "entertainment": 263,
+    "politics": 266,
+    "sport": 342,
+    "tech": 234
+  },
+  "train_rows": 1152,
+  "test_rows": 288,
+  "random_seed": 42,
+  "best_model": "Linear SVM",
+  "best_accuracy": 0.96875,
+  "best_macro_f1": 0.9672444617963901,
+  "vocabulary_size": 20000,
+  "mean_words_per_article": 385.49861111111113,
+  "median_words_per_article": 338.0,
+  "sentiment_means": {
+    "business": 0.23816835820895524,
+    "entertainment": 0.5903463878326997,
+    "politics": 0.04948045112781955,
+    "sport": 0.5492090643274854,
+    "tech": 0.5329713675213675
+  },
+  "entity_sample_articles": 500
+}

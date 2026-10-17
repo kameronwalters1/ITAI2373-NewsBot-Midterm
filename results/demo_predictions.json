@@ -1,0 +1,88 @@
+[
+  {
+    "text": "The finance ministry said the economy expanded after exporters reported stronger demand and the central bank held interest rates steady.",
+    "predicted_category": "business",
+    "sentiment": 0.6249,
+    "entities": [],
+    "subject_verb_object": [
+      {
+        "token": "ministry",
+        "dependency": "nsubj",
+        "head": "said"
+      },
+      {
+        "token": "said",
+        "dependency": "ROOT",
+        "head": "said"
+      },
+      {
+        "token": "economy",
+        "dependency": "nsubj",
+        "head": "expanded"
+      },
+      {
+        "token": "exporters",
+        "dependency": "nsubj",
+        "head": "reported"
+      },
+      {
+        "token": "demand",
+        "dependency": "dobj",
+        "head": "reported"
+      },
+      {
+        "token": "bank",
+        "dependency": "nsubj",
+        "head": "held"
+      },
+      {
+        "token": "rates",
+        "dependency": "dobj",
+        "head": "held"
+      }
+    ]
+  },
+  {
+    "text": "The club secured a dramatic victory after its striker scored twice in the final ten minutes of the championship match.",
+    "predicted_category": "sport",
+    "sentiment": 0.6808,
+    "entities": [
+      {
+        "text": "ten minutes",
+        "label": "TIME"
+      }
+    ],
+    "subject_verb_object": [
+      {
+        "token": "club",
+        "dependency": "nsubj",
+        "head": "secured"
+      },
+      {
+        "token": "secured",
+        "dependency": "ROOT",
+        "head": "secured"
+      },
+      {
+        "token": "victory",
+        "dependency": "dobj",
+        "head": "secured"
+      },
+      {
+        "token": "striker",
+        "dependency": "nsubj",
+        "head": "scored"
+      },
+      {
+        "token": "minutes",
+        "dependency": "pobj",
+        "head": "in"
+      },
+      {
+        "token": "match",
+        "dependency": "pobj",
+        "head": "of"
+      }
+    ]
+  }
+]
